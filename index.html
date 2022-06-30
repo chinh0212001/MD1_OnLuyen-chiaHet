@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<button onclick="kiemTraKetQua()">ketqua</button>
+<p id="phep_chia_het"></p>
+<script>
+    function kiemTraKetQua(){
+        let number1 = +document.getElementById('number1').value;
+        let number2 = +document.getElementById('number2').value;
+        if(number1%number2==0){
+            document.getElementById('phep_chia_het').innerText= 'so' + number1 + 'chia het' + number2;
+        }else {
+            document.getElementById('phep_chia_het').innerText= 'so' + number1 + 'ko chia het cho'+ 'so' + number2;
+        }
+    }
+</script>
+</body>
+</html>
